@@ -1,0 +1,213 @@
+/* .bg{
+    margin-top:-20px;margin-left:-15px;position:absolute;
+   }
+
+.thought_about{        
+ margin-left:80px;height:230px;width: 87%;opacity: 1;color:white;font-weight: bold;
+font-size: 35px;padding:40px;background: linear-gradient(rgba(85, 77, 77, 0.5), rgba(71, 69, 69, 0.5));
+ position:relative;margin-top:60px;
+ -webkit-animation: slideIn 8s forwards;  
+ -moz-animation: slideIn 8s forwards;  
+ animation: slideIn 8s forwards;
+}   
+
+.thought_author{       
+ float:right;        
+font-family: 'Tangerine', cursive;font-size: 46px;    
+}
+
+.founder_info{
+    height:50px;
+     width: 70%; 
+    opacity: 1;
+    color:white;
+    font-weight: bold;
+    font-size: 35px;
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:20px;
+    background: linear-gradient(to left, rgba(255,155,0,0), rgba(255,160,00,1));
+    position:relative; 
+}
+.founder_info2{
+     margin-top:20px;
+    
+    height:50px;
+    width: 97%;
+    opacity: 1;
+    color:white;
+    font-weight: bold;
+    font-size: 35px;
+    padding-top:40px;
+    padding-bottom:60px;
+    padding-left:20px;
+    background: linear-gradient(to left, rgba(255,155,0,0), rgba(255,160,00,1));
+    position:relative;
+}
+@-webkit-keyframes slideIn {
+    0% {
+    transform: translateX(-900px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+    }
+    @-moz-keyframes slideIn {
+    0% {
+    transform: translateX(-900px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+    }
+    @keyframes slideIn {
+    0% {
+    transform: translateX(-900px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+    }
+  
+.rowover{
+    padding-left:30px;padding-right:30px;
+  }
+  .para{      
+      font-size:16px;     
+       margin-left:0px;
+       margin-right:30px;     
+        text-align:justify; 
+       }
+       .para1{      
+        font-size:16px;     
+         margin-left:30px;
+         margin-right:30px;     
+          text-align:justify; 
+         }
+       .trustee_image {
+        display: block;
+        width: 300px;
+        height:250px;
+        margin-left:30px;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        opacity: 1;
+      }
+      .founder_card{
+          width:93%;
+          height: auto;
+          background-color: white;
+          box-shadow: 0px 5px 15px 0px #888888;
+          margin-left: 40px;
+          padding-left: 40px;
+          padding-bottom:20px;
+      }
+      .founder_card2{
+        width:45%;
+        height: auto;
+        background-color: white;
+        box-shadow: 0px 5px 15px 0px #888888;
+        margin-left: 40px;
+        padding-left: 40px;
+        padding-bottom:20px;
+    } */
+
+.bg{
+    margin-top:-20px;
+}
+
+.thought_about{
+    -webkit-animation: slideIn 8s forwards;  
+    -moz-animation: slideIn 8s forwards;  
+    animation: slideIn 8s forwards;
+    margin-left:80px;
+    height:220px;
+    width: 87%;
+    opacity:1;
+    color:white;
+    font-weight: bold;
+    font-size: 35px;
+    padding:40px;
+    background: linear-gradient(rgba(85, 77, 77, 0.5), rgba(71, 69, 69, 0.5));
+    margin-top:-360px;
+    position: relative;
+  }
+  
+  .thought_author{
+    float:right;
+    font-family: 'Tangerine', cursive;
+    font-size: 46px;
+    padding-bottom: 25px;
+  }
+
+  @-webkit-keyframes slideIn {
+    0% {
+    transform: translateX(-900px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+    }
+    @-moz-keyframes slideIn {
+    0% {
+    transform: translateX(-900px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+    }
+    @keyframes slideIn {
+    0% {
+    transform: translateX(-900px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+    }
+
+.founder_info{
+    height:50px;
+    width: 70%; 
+    opacity: 1;
+    color:white;
+    font-weight: bold;
+    font-size: 35px;
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:20px;
+    background: linear-gradient(to left, rgba(255,155,0,0), rgba(255,160,00,1));
+    position:relative; 
+}
+.founder_info2{
+   margin-top:20px;
+   height:50px;
+   width: 97%;
+   opacity: 1;
+   color:white;
+   font-weight: bold;
+   font-size: 15px;
+   padding-top:40px;
+   padding-bottom:60px;
+   padding-left:20px;
+   background: linear-gradient(to left, rgba(255,155,0,0), rgba(255,160,00,1));
+   position:relative;
+}
+.founder_card{
+    width:100%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 5px 15px 0px #888888;
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:30px;
+    padding-top:20px;
+}
+.founder_card2{
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 5px 15px 0px #888888;
+    padding-left: 30px;
+    padding-bottom:20px;
+    padding-top:20px;
+    padding-right:30px; 
+} 

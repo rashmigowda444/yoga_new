@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+h6,h5,h4,h3,h2,h1{
+    font-family: 'Jura', sans-serif;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+}
+::-webkit-input-placeholder {
+    font-family: 'Quicksand', sans-serif;
+}
+:-moz-placeholder {
+    font-family: 'Quicksand', sans-serif;
+}
+::-moz-placeholder {
+    font-family: 'Quicksand', sans-serif;
+}
+:-ms-input-placeholder {
+    font-family: 'Quicksand', sans-serif;
+}
+.body{
+    overflow-x: hidden;
+}
+
+body,html{
+    height:100%;
+}
+.bodydiv{
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+.allhead{
+font-size:30px;
+color:green;
+font-weight:bold
+}
+.para{
+    font-size:16px;
+    text-align:justify;
+  }
+
+
+/* .app-loading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    }
+    .app-loading .spinner {
+    height: 100%;
+    width: 100%;
+    animation: rotate 1.5s linear infinite;
+    transform-origin: center center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }
+    .app-loading .spinner .path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite;
+    stroke-linecap: round;
+    stroke: #ddd;
+    } */
+    /* @keyframes rotate {
+    100% {
+    transform: rotateY(360deg);
+    }
+    }
+    @keyframes dash {
+    0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    }
+    50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+    }
+    100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+    }
+    } */
+
+    /* .omdiv{
+        width:100%; 
+        height:100vh;
+        background-image:
+          url('assets/images/blue.jpg');
+        background-size:100% 100%;
+        position:fixed;
+        top:0;left:0;
+        width:100%;
+        height:100vh;
+        animation: zoom 30s infinite;
+        text-align:center;
+      }
+      h1{
+        color:#fff;
+        font-size:50px;
+      }
+      @keyframes zoom {
+        0% { transform:scale(1,1); }
+        50% { transform:scale(1.2,1.2); }
+        100% {
+          transform:scale(1,1); 
+        }
+      } */
+      .w3-center {
+        display:inline-block;width:auto;
+    }
+    .omback{
+        background:url('assets/images/back.jpg')no-repeat;
+        position:relative;
+        background-size:cover;
+        padding-bottom:100px;
+    }
+
+    
+    
+      .w3-animate-zoom 
+      {
+          animation:animatezoom 2s;
+          animation-timing-function: linear;
+      }
+      
+        @keyframes animatezoom
+        {from{transform:scale(0)} 
+        to{transform:scale(1.9)}}
+
+        
