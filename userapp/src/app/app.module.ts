@@ -16,6 +16,7 @@ import { EventsComponent } from './components/events/events.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 
 import { PhpService } from './services/php.service';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
 
 const appRoutes:Routes=[
   {path:'', component:HomeComponent},
@@ -25,7 +26,8 @@ const appRoutes:Routes=[
   {path:'services', component:ServicesComponent},
   {path:'events', component:EventsComponent},
   {path:'gallery', component:GalleryComponent},
-  {path:'contact', component:ContactComponent}
+  {path:'contact', component:ContactComponent},
+  {path:'testimonial', component:TestimonialComponent}
 ]
 
 @NgModule({
@@ -40,7 +42,8 @@ const appRoutes:Routes=[
     FounderComponent,
     ServicesComponent,
     EventsComponent,
-    GalleryComponent
+    GalleryComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,
