@@ -129,6 +129,7 @@ font-weight:bold
       {
           animation:animatezoom 2s;
           animation-timing-function: linear;
+          animation-duration: 0.5s;
       }
       
         @keyframes animatezoom
