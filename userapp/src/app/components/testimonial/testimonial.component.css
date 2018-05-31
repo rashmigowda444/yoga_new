@@ -50,61 +50,76 @@
     transform: translateX(0);
     }
     }
-    .content{
-        padding:20px;
-       }
-    
-      .boxcontent{
-         height:310px;
-         position:relative;
-       }
-       .image {
-        display: block;
-        width: 100%;
-        height:300px;
-        opacity: 1;
-        background: black;
-      }
-      .overlay {
-       position: absolute;
-       bottom: 0;
-       left: 0;
-       right: 0;
-       background-color: #004419;
-       overflow: hidden;
-       width: 100%;
-       height: 20%;
-       transition: .5s ease;
+    /* .content{
+      padding:20px;
+     }
+   */
+    .boxcontent{
+       height:310px;
+       position:relative;
+       text-align: center;
      }
      
-     .boxcontent:hover .overlay {
-       height: 40%;
+     .image {
+       display: block;
+       width: 100%;
+       height:300px;
+       position: relative;
+       
+      
+          
      }
-     .text {
-       color: white;
-       font-size: 20px;
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       -ms-transform: translate(-50%, -50%);
-       text-align: center;font-family: 'Jura', sans-serif;
-     }
+     .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #004419;
+      overflow: hidden;
+      width: 100%;
+      height: 35%;
+      transition: .5s ease;
+    }
+    
+    .boxcontent:hover .overlay {
+      height: 40%;
+    }
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;font-family: 'Jura', sans-serif;
+    }
      .para1{
         font-size:18px;
-       color:white;
-       
+        color:white;
         margin-top:-200px;
       }
-      .container img {vertical-align: middle;}
+      .para2{
+       font-size:20px;
+       color:white;
+       font-weight: bold;
+       position:absolute;
+       bottom: 175px;
+       letter-spacing: 2px;
+       left:40px;
+       right:40px;
+            
+      }
+      /* .container img {vertical-align: middle;}
 
       .container .content{
           position: absolute;
           bottom: 0;
           background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
-          color: #f1f1f1;
+          /* color: #f1f1f1;
           width: 92.8%;
           height:100%;
           padding: 20px;
           font-size:18px;
-      }
+          
+      } */

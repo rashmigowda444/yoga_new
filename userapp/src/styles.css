@@ -120,7 +120,7 @@ font-weight:bold
         background:url('assets/images/back.jpg')no-repeat;
         position:relative;
         background-size:cover;
-        padding-bottom:100px;
+        height: 100%;
     }
 
     

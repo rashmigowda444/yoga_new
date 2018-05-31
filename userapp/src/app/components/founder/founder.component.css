@@ -170,7 +170,7 @@ font-family: 'Tangerine', cursive;font-size: 46px;
     width: 70%; 
     opacity: 1;
     color:white;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 35px;
     padding-top:40px;
     padding-bottom:40px;
@@ -184,12 +184,12 @@ font-family: 'Tangerine', cursive;font-size: 46px;
    width: 97%;
    opacity: 1;
    color:white;
-   font-weight: bold;
+   /* font-weight: bold; */
    font-size: 15px;
-   padding-top:10px;
+   padding-top:15px;
    /* padding-bottom:60px; */
    padding-left:20px;
-   background: linear-gradient(to left, rgba(255,155,0,0.4), rgba(255,160,00,1));
+   background: linear-gradient(to left, rgba(255,155,0,0), rgba(255,160,00,1));
    position:relative;
 }
 .founder_card{
