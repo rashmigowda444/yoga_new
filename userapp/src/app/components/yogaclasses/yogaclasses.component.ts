@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class YogaclassesComponent implements OnInit {
 
+  user:any;
   constructor() { }
 
   ngOnInit() {
   }
-
+onSubmit(){
+  
+}
 }
