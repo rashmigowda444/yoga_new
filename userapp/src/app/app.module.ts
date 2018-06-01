@@ -19,6 +19,7 @@ import { PhpService } from './services/php.service';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { CoordinatorsComponent } from './components/coordinators/coordinators.component';
 import { YogaclassesComponent } from './components/yogaclasses/yogaclasses.component';
+import { AdyComponent } from './components/ady/ady.component';
 
 const appRoutes:Routes=[
   {path:'', component:HomeComponent},
@@ -32,6 +33,7 @@ const appRoutes:Routes=[
   {path:'testimonial', component:TestimonialComponent},
   {path:'coordinators', component:CoordinatorsComponent},
   {path:'yogaclasses', component:YogaclassesComponent},
+  {path:'ady', component:AdyComponent}
 ]
 
 @NgModule({
@@ -49,7 +51,8 @@ const appRoutes:Routes=[
     GalleryComponent,
     TestimonialComponent,
     CoordinatorsComponent,
-    YogaclassesComponent
+    YogaclassesComponent,
+    AdyComponent
   ],
   imports: [
     BrowserModule,
