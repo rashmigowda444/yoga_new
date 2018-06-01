@@ -183,8 +183,8 @@
         </div><br><br><br><br><br><br><br><br><br><br><br><br>
 
         <div class="bodydiv">
-                <div class="row">
-                        <div class="col-md-6" >
+                <div class="row rowcontact">
+                        <div class="col-md-6 colcontaddress" >
                                 <div class="founder_card2">
                                 <div class="row">
                                         <div class="col-md-5">
@@ -229,7 +229,7 @@
                                                  <i class="glyphicon glyphicon-glyphicon glyphicon-user"></i>
                                                 </span>
                                                                                         
-                                                <input type="text" class="form-control" id="fname" placeholder="Your Name" name="fname"[(ngModel)]="user.fname" #userfname="ngModel" minlength="3" maxlength="15" pattern="^[a-zA-Z][a-zA-Z\s]{2,15}$" required style="width:400px;height:40px;margin-left:40px;margin-top:-40px;">
+                                                <input type="text" class="form-control inputfield" id="fname" placeholder="Your Name" name="fname"[(ngModel)]="user.fname" #userfname="ngModel" minlength="3" maxlength="15" pattern="^[a-zA-Z][a-zA-Z\s]{2,15}$" required >
                                          </div>
                                         <div class="alert alert-danger" *ngIf="userfname.touched && !userfname.valid">
                                                 <div *ngIf="userfname.errors.required"> Name is required.</div>
@@ -242,9 +242,9 @@
                                                 <span class="input-group-addon" style="color:white; background-color: orange;width:40px;height:40px;">
                                                 <i class="glyphicon glyphicon-glyphicon glyphicon-earphone"></i>
                                                 </span>
-                                                <input type="text" class="form-control" id="phone" 
+                                                <input type="text" class="form-control inputfield" id="phone" 
                                                 placeholder="Your Phone" name="phone" [(ngModel)]="user.phone"
-                                                #userphone="ngModel" minlength="10" maxlength="10" pattern="^[6789][0-9]{0,10}$" required style="width:400px;height:40px;margin-left:40px;margin-top:-40px;">
+                                                #userphone="ngModel" minlength="10" maxlength="10" pattern="^[6789][0-9]{0,10}$" required >
                                         </div>
                                         <div *ngIf="userphone.errors?.maxlength || userphone.errors?.minlength && userphone.touched" class="alert alert-danger">Enter a 10 digit phone number</div>
                                         <div *ngIf="userphone.errors?.pattern" class="alert alert-danger">Please provide a valid phone number</div> 
@@ -256,8 +256,8 @@
                                                 <span class="input-group-addon" style="color:white; background-color: orange;width:40px;height:40px;">
                                                 <i class="glyphicon glyphicon-glyphicon glyphicon-envelope"></i>
                                                 </span>
-                                                <input type="text" class="form-control" id="email" placeholder="Your Email" name="email"[(ngModel)]="user.email"
-                                                #useremail="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required style="width:400px;height:40px;margin-left:40px;margin-top:-40px;">
+                                                <input type="text" class="form-control inputfield" id="email" placeholder="Your Email" name="email"[(ngModel)]="user.email"
+                                                #useremail="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required >
                                         </div>
                                         <div *ngIf="useremail.errors?.required && useremail.touched" class="alert alert-danger">Email is required</div>
                                         <div *ngIf="useremail.errors?.pattern" class="alert alert-danger">Please provide a valid email address</div> 
@@ -267,8 +267,8 @@
                                                 <span class="input-group-addon" style="color:white; background-color: orange;width:40px;height:40px;">
                                                 <i class="glyphicon glyphicon-glyphicon glyphicon-pencil"></i>
                                                 </span>
-                                                <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" [(ngModel)]="user.subject"
-                                                #usersubject="ngModel" required style="width:400px;height:40px;margin-left:40px;margin-top:-40px;">
+                                                <input type="text" class="form-control inputfield" id="subject" placeholder="Subject" name="subject" [(ngModel)]="user.subject"
+                                                #usersubject="ngModel" required >
                                         </div>
                                         <div *ngIf="usersubject.errors?.required && usersubject.touched" class="alert alert-danger">Subject is required</div>
                                                                                  
@@ -277,9 +277,9 @@
                                                 <span class="input-group-addon" style="color:white; background-color: orange;width:40px;height:86px;">
                                                 <i class="glyphicon glyphicon-glyphicon glyphicon-pencil"></i>
                                                 </span>
-                                                <textarea rows="5" class="form-control" id="comment" 
+                                                <textarea rows="5" class="form-control textareafield" id="comment" 
                                                 placeholder="Comment" name="comment" [(ngModel)]="user.comment"
-                                                #usercomment="ngModel" minlength="25" required style="width:400px;margin-left:40px;margin-top:-85px;"></textarea>
+                                                #usercomment="ngModel" minlength="25" required ></textarea>
                                         </div>
                                         <div *ngIf="usercomment.errors?.required && usercomment.touched" class="alert alert-danger">Comment is required</div>
                                         <div *ngIf=" usercomment.errors?.minlength && usercomment.touched" class="alert alert-danger">Minimum 25 characters required</div><br>
@@ -314,7 +314,7 @@
 
                 <div class="row">
                                 <div class="col-md-12" class="colmap">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2269570404214!2d77.58655995001354!3d13.08479779073645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae184162240c81%3A0x68d08147fe7b38fa!2sSwamy+Vivekananda+Yoga+Research+%40+Holistic+Health+Trust!5e0!3m2!1sen!2sin!4v1527061845846" width="1230px" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2269570404214!2d77.58655995001354!3d13.08479779073645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae184162240c81%3A0x68d08147fe7b38fa!2sSwamy+Vivekananda+Yoga+Research+%40+Holistic+Health+Trust!5e0!3m2!1sen!2sin!4v1527061845846"  frameborder="0" style="border:0" class="mapimg"></iframe>
                                 </div>
                 </div><br><br><br><br><br><br> 
 

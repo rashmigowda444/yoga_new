@@ -128,5 +128,51 @@ overflow: hidden !important;
         height:40px;width:100px;background-color:green;margin-left:350px;color:white;border:none;
     }
     .colmap{
-        padding-left:15px;
+        padding-left:15px;width:1230px;height:500px;
+    }
+    .inputfield{
+        width:400px;height:40px;margin-left:40px;margin-top:-40px;
+    }
+    .textareafield{
+        width:400px;margin-left:40px;margin-top:-85px;
+    }
+
+    .mapimg{
+        width:1230px;height:500px;
+    }
+
+
+
+
+
+
+
+
+
+    @media(min-width:0px) and (max-width:400px){
+
+    .rowcontact{
+        margin-top:-120px;
+    }
+    .colcontaddress{
+        margin-bottom:50px;
+    }
+    .inputfield{
+        width:180px;
+    }
+    .textareafield{
+        width:180px;
+    }
+    .subbut{
+        margin-left:120px;
+    }
+    .mapimg{
+        width:280px;
+    }
+
+
+
+
+
+
     }

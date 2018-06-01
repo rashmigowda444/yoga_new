@@ -116,3 +116,24 @@
     -o-animation: blink 1s;
     -o-animation-iteration-count: infinite;
 }
+
+
+
+
+
+@media(min-width:0px) and (max-width:400px){
+
+.logoimg{
+    margin-right:130px;
+}
+.navbar-brand{
+    margin-top:10px;
+}
+.ady{
+    display: none;
+}
+.navbar-toggler{
+    margin-left:290px;margin-top:-50px;
+}
+
+}
