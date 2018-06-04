@@ -8,7 +8,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { ActivitiesComponent } from './components/activities/activities.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FounderComponent } from './components/founder/founder.component';
 import { ServicesComponent } from './components/services/services.component';
@@ -21,6 +20,7 @@ import { CoordinatorsComponent } from './components/coordinators/coordinators.co
 import { YogaclassesComponent } from './components/yogaclasses/yogaclasses.component';
 import { AdyComponent } from './components/ady/ady.component';
 import { ComingsoonComponent } from './components/comingsoon/comingsoon.component';
+import { BookappointmentComponent } from './components/bookappointment/bookappointment.component';
 
 const appRoutes:Routes=[
   {path:'', component:HomeComponent},
@@ -35,7 +35,8 @@ const appRoutes:Routes=[
   {path:'coordinators', component:CoordinatorsComponent},
   {path:'yogaclasses', component:YogaclassesComponent},
   {path:'ady', component:AdyComponent},
-  {path:'coming',component:ComingsoonComponent}
+  {path:'coming',component:ComingsoonComponent},
+  {path:'bookappointment',component:BookappointmentComponent}
 ]
 
 @NgModule({
@@ -45,7 +46,6 @@ const appRoutes:Routes=[
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ActivitiesComponent,
     ContactComponent,
     FounderComponent,
     ServicesComponent,
@@ -55,7 +55,8 @@ const appRoutes:Routes=[
     CoordinatorsComponent,
     YogaclassesComponent,
     AdyComponent,
-    ComingsoonComponent
+    ComingsoonComponent,
+    BookappointmentComponent
   ],
   imports: [
     BrowserModule,
