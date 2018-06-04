@@ -2,7 +2,7 @@
 <!-- <nav class="navbar navbar-fixed-top  navbar-expand-md bg-light navbar-light custnav">
   <div class="container-fluid">
 
-<a class="navbar-brand" href="#"><img class="logoimg" src="assets/images/logo.png" height="90" width="90"></a>
+<a class="navbar-brand" [routerLink]="#"><img class="logoimg" src="assets/images/logo.png" height="90" width="90"></a>
 <span class="logotxt"><h2><b>ATMA DARSHANA YOGA</b></h2></span>
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -40,8 +40,8 @@
 
  <nav class="navbar navbar-expand-md bg-light navbar-light topnav">
   <a href="#"><img class="logoimg" src="assets/images/logo.png" height="90" width="90"></a>
-  <a class="navbar-brand" href="home"><h2 class="logotxt"><b>AYUSH WELLNESS</b></h2></a>
-  <a href="ady"><img class="ady" src="assets/images/ady.png" height="70" width="70"/></a>
+  <a class="navbar-brand" [routerLink]="['/home']"><h2 class="logotxt"><b>AYUSH WELLNESS</b></h2></a>
+  <a [routerLink]="['/ady']"><img class="ady" src="assets/images/ady.png" height="70" width="70"/></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -50,55 +50,55 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
            <!-- <li class="nav-item">
-              <a class="nav-link" href=""><img class="ady" src="assets/images/ady.png" style="height:50px;width:50px;"></a>
+              <a class="nav-link" [routerLink]=""><img class="ady" src="assets/images/ady.png" style="height:50px;width:50px;"></a>
             </li>  -->
           <li class="nav-item">
-            <a class="nav-link" href="">HOME</a>
+            <a class="nav-link" [routerLink]="['/home']">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about" >ABOUT</a>
-          </li>
+            <a class="nav-link" [routerLink]="['/about']" >ABOUT</a>
+          </li> 
           <li class="nav-item dropdown">
-              <a  class="nav-link" href="services"  >
+              <a  class="nav-link" [routerLink]="['/services']"  >
                   SERVICES
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="yogaclasses" >YOGA CLASSES</a><hr>
-                  <a class="dropdown-item" href="" data-toggle="tooltip" data-placement="right" title="COMING SOON..!!">POWER YOGA</a><hr>
-                  <a class="dropdown-item" href="" data-toggle="tooltip" data-placement="right" title="COMING SOON..!!">AYURVEDA</a><hr>
-                  <a class="dropdown-item" href="" data-toggle="tooltip" data-placement="right" title="COMING SOON..!!">ASTROLOGY</a><hr>
-                  <a class="dropdown-item" href="" data-toggle="tooltip" data-placement="right" title="COMING SOON..!!">ACUPRESSURE & ACUPUNCTURE</a><hr>
-                  <a class="dropdown-item" href="" data-toggle="tooltip" data-placement="right" title="COMING SOON..!!">NATUROPATHY</a><hr>
-                  <a class="dropdown-item" href="" data-toggle="tooltip" data-placement="right" title="COMING SOON..!!">HOMEOPATHY</a><hr>
-                  <a class="dropdown-item" href="" data-toggle="tooltip" data-placement="right" title="COMING SOON..!!">REIKI & PRANIC HEALING</a><hr>
-                  <a class="dropdown-item" href="" data-toggle="tooltip" data-placement="right" title="COMING SOON..!!">SPA SERVICES</a><hr>
-                  <a class="dropdown-item" href="" data-toggle="tooltip" data-placement="right" title="COMING SOON..!!">FTR & NLP </a>
+                  <a class="dropdown-item" [routerLink]="['/yogaclasses']">YOGA CLASSES</a><hr>
+                  <a class="dropdown-item" [routerLink]="['/coming']">POWER YOGA</a><hr>
+                  <a class="dropdown-item" [routerLink]="['/coming']">AYURVEDA</a><hr>
+                  <a class="dropdown-item" [routerLink]="['/coming']">ASTROLOGY</a><hr>
+                  <a class="dropdown-item" [routerLink]="['/coming']">ACUPRESSURE & ACUPUNCTURE</a><hr>
+                  <a class="dropdown-item" [routerLink]="['/coming']">NATUROPATHY</a><hr>
+                  <a class="dropdown-item" [routerLink]="['/coming']">HOMEOPATHY</a><hr>
+                  <a class="dropdown-item" [routerLink]="['/coming']">REIKI & PRANIC HEALING</a><hr>
+                  <a class="dropdown-item" [routerLink]="['/coming']">SPA SERVICES</a><hr>
+                  <a class="dropdown-item" [routerLink]="['/coming']">FTR & NLP </a>
                 </div>
           </li> 
 
           
 
           <li class="nav-item">
-            <a class="nav-link" href="events">EVENTS</a>
+            <a class="nav-link" [routerLink]="['/events']">EVENTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="gallery">GALLERY</a>
+            <a class="nav-link" [routerLink]="['/gallery']">GALLERY</a>
           </li>
           <li  class="nav-item dropdown">
-              <!-- <a class="nav-link" href="founder">TEAM</a> -->
+              <!-- <a class="nav-link" [routerLink]="founder">TEAM</a> -->
               <!-- <div class="dropdown"> -->
-                  <a class="nav-link" href="founder" >
+                  <a class="nav-link" [routerLink]="['/founder']" >
                     TEAM
                   </a>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="founder">FOUNDER</a><hr>
-                    <a class="dropdown-item" href="coordinators">CO-ORDINATORS</a>
+                    <a class="dropdown-item" [routerLink]="['/founder']">FOUNDER</a><hr>
+                    <a class="dropdown-item" [routerLink]="['/coordinators']">CO-ORDINATORS</a>
                   </div>
                 <!-- </div> -->
 
         </li> 
           <li class="nav-item">
-            <a class="nav-link" href="contact">CONTACT US</a>
+            <a class="nav-link" [routerLink]="['/contact']">CONTACT US</a>
           </li> 
         </ul>
   </div> 

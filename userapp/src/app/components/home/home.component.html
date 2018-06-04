@@ -166,8 +166,8 @@
                 <div class="row">
                         <div class="col-md-4 content">
                                 <div class="boxcontent">
-                                        <a href="about"><img src="assets/images/abt.jpg" alt="Avatar" class="image"></a> 
-                                        <a href="about"> 
+                                        <a [routerLink]="['/about']"><img src="assets/images/abt.jpg" alt="Avatar" class="image"></a> 
+                                        <a [routerLink]="['/about']"> 
                                                 <div class="overlay">
                                                 <div class="text">ABOUT US</div>
                                                 </div>
@@ -177,8 +177,8 @@
 
                         <div class="col-md-4 content">
                                 <div class="boxcontent">
-                                        <a href="services"><img src="assets/images/yoga1.jpeg" alt="Avatar" class="image"></a>
-                                        <a href="services">
+                                        <a [routerLink]="['/services']"><img src="assets/images/yoga1.jpeg" alt="Avatar" class="image"></a>
+                                        <a [routerLink]="['/services']">
                                                 <div class="overlay">
                                                 <div class="text">OUR SERVICES</div>
                                                 </div>
@@ -190,8 +190,8 @@
 
                         <div class="col-md-4 content">
                                 <div class="boxcontent">
-                                        <a href="services"><img src="assets/images/asana.png" alt="Avatar" class="image"></a>
-                                        <a href="services">
+                                        <a [routerLink]="['/services']"><img src="assets/images/asana.png" alt="Avatar" class="image"></a>
+                                        <a [routerLink]="['/services']">
                                                 <div class="overlay">
                                                 <div class="text">YOGA CLASSES</div>
                                                 </div>
@@ -211,7 +211,7 @@
                         </div>                            
                 </div><br><br><br>
 
-               <a href="testimonial" style="text-decoration:none;"> <div id="demo" class="carousel slide"  data-interval="2000" data-ride="carousel">
+               <a [routerLink]="['/testimonial']" style="text-decoration:none;"> <div id="demo" class="carousel slide"  data-interval="2000" data-ride="carousel">
 
                         <ul class="carousel-indicators">
                                 <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -247,10 +247,10 @@
                                   </div>
                                   
                         </div>
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <a class="carousel-control-prev" [routerLink]="['/#demo']" data-slide="prev">
                                 <span class="carousel-control-prev-icon"></span>
                         </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <a class="carousel-control-next" [routerLink]="['/#demo']" data-slide="next">
                                 <span class="carousel-control-next-icon"></span>
                         </a>
                 </div></a>
