@@ -322,3 +322,23 @@
   backface-visibility: hidden;
   opacity: 1;
 }
+
+
+@media(min-width:0px) and (max-width:400px){
+  .trustee_image {
+    margin-left:0px;
+    width: 300px;
+    margin-bottom:20px;
+   
+  }
+  .hovereffect .overlay {
+    margin-left:0px;
+  }
+  .hovereffect h2{
+    padding:0px;
+  }
+  .hovereffect a.info {
+    padding-top:30px;
+    margin-top:50px;
+  }
+}

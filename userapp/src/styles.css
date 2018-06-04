@@ -120,7 +120,7 @@ font-weight:bold
         background:url('assets/images/back.jpg')no-repeat;
         position:relative;
         background-size:cover;
-        padding-bottom:100px;
+        height: 100%;
     }
 
     
@@ -129,15 +129,15 @@ font-weight:bold
       {
           animation:animatezoom 2s;
           animation-timing-function: linear;
+          animation-duration: 0.5s;
       }
       
         @keyframes animatezoom
         {from{transform:scale(0)} 
         to{transform:scale(1.9)}}
 
-@media(min-width:0px) and (max-width:400px){
-    .thought_about{
-        display: none;
-    }
-
-}
+        @media(min-width:0px) and (max-width:400px){
+            .thought_about{
+                display: none;
+              }
+        }

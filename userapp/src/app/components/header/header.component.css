@@ -55,9 +55,9 @@
     letter-spacing: 1px;
     margin-top:10px; 
 }
-/* .navbar-nav{
-    margin-left:10px;
-} */
+.navbar-nav{
+    margin-left:150px;
+}
 .nav-item{
     font-size:15px;
     font-family: 'Jura', sans-serif;
@@ -117,23 +117,28 @@
     -o-animation-iteration-count: infinite;
 }
 
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
 
+  .dropdown-item{
+    font-size:15px;
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    /* margin-left:25px; */
+    color:green !important;
 
-
-
-@media(min-width:0px) and (max-width:400px){
-
-.logoimg{
-    margin-right:130px;
-}
-.navbar-brand{
-    margin-top:10px;
-}
-.ady{
-    display: none;
-}
-.navbar-toggler{
-    margin-left:290px;margin-top:-50px;
-}
-
-}
+  }
+  /* .dropdown-item :hover{
+    color:green !important;
+  } */
+    
+  .dropdown-menu a:hover{
+   
+    color:#ff9933 !important;
+  }
