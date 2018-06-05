@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class YogaclassesComponent implements OnInit {
 
-  user:any;
+  user = {   
+    fname: "",   
+    phone: "",  
+    email: "",   
+    comment: "",
+    startdate:"",
+    enddate:""
+    }
   constructor() { }
 
   ngOnInit() {

@@ -23,3 +23,40 @@
     color:green;
     text-align: center;
 }
+.colyogaimg{
+    padding:40px 0px 0px 80px;
+}
+.inputfield{
+    width:400px;height:40px;margin-left:40px;margin-top:-40px;
+}
+.textareafield{
+    width:400px;margin-left:40px;margin-top:-85px;
+}
+
+
+
+
+
+@media(min-width:0px) and (max-width:400px){
+    .colyogaimg{
+        padding:20px 0px 30px 20px;
+    }
+    .yogaimg{
+        width:270px;
+    }
+    .modal-content{
+        width:90%;
+        margin-left:8px;
+    }
+    .inputfield{
+        width:200px;
+    }
+    .textareafield{
+        width:200px;
+    }
+    .subbut2{
+        margin-left:140px;
+        margin-top:20px;
+    }
+}
+
