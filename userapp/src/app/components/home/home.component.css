@@ -9,17 +9,6 @@
      padding-right:30px;
    }
 
-   .allhead{
-    font-size:30px;
-    color:green;
-    font-weight:bold
-   }
-
-   .para{
-    font-size:16px;
-    text-align:justify;
-  }
-
   .content{
     padding:20px;
    }
@@ -83,7 +72,10 @@
     
     }
     
-
+    .homeimg{
+      height:500px;
+      width:100%;
+    }
 
 
 
@@ -99,10 +91,25 @@
     margin-left:10px; 
     font-size: 23px;
   }
+  .homeimg{
+    height:250px;
+  }
+  .image {
+    height:250px;
+  }
+  .boxcontent{
+    height:260px;
+  }
 
-
-
-
+  .overlay {
+    height: 30%;
+  }
+  .boxcontent:hover .overlay {
+    height: 40%;
+  }
+  .text {
+    font-size: 18px;
+  }
 
 
 

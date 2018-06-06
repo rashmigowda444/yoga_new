@@ -26,14 +26,14 @@
                                 </div><br><br>
 
                                 <div class="coladdress">
-                                    <p><span class="glyphicon glyphicon-home" style="padding-right:10px;"></span> #2, Siddharuda Nilaya, 8th Main, 13th Cross,Judicial Layout, Allalasandra,GKVK Post, Yelahanka, Bangalore - 560 065.</p>
-                                    <p><span class="glyphicon glyphicon-phone-alt" style="padding-right:10px;"></span> +91 - 80 2856 0168</p>
-                                    <p><span class="glyphicon glyphicon-earphone" style="padding-right:10px;"></span> +91 - 94491 66245 </p>
-                                    <p><span class="glyphicon glyphicon-earphone" style="padding-right:10px;"></span> +91 - 90360 01214 </p>
-                                    <p><span class="glyphicon glyphicon-envelope" style="padding-right:10px;"></span> devarajyoga58@gmail.com</p>
-                                    <p><span class="glyphicon glyphicon-envelope" style="padding-right:10px;"></span> yogidevaraj@atmadarshanayoga.in</p>
-                                    <p><span class="glyphicon glyphicon-envelope" style="padding-right:10px;"></span>  info@atmadarshanayoga.in</p>
-                                    <p><span class="glyphicon glyphicon-envelope" style="padding-right:10px;"></span> www.atmadarshanayoga.in</p>
+                                    <p class="para"><span class="glyphicon glyphicon-home" style="padding-right:10px;"></span> #2, Siddharuda Nilaya, 8th Main, 13th Cross,Judicial Layout, Allalasandra,GKVK Post, Yelahanka, Bangalore - 560 065.</p>
+                                    <p class="para"><span class="glyphicon glyphicon-phone-alt" style="padding-right:10px;"></span> +91 - 80 2856 0168</p>
+                                    <p class="para"><span class="glyphicon glyphicon-earphone" style="padding-right:10px;"></span> +91 - 94491 66245 </p>
+                                    <p class="para"><span class="glyphicon glyphicon-earphone" style="padding-right:10px;"></span> +91 - 90360 01214 </p>
+                                    <p class="para"><span class="glyphicon glyphicon-envelope" style="padding-right:10px;"></span> devarajyoga58@gmail.com</p>
+                                    <p class="para"><span class="glyphicon glyphicon-envelope" style="padding-right:10px;"></span> yogidevaraj@atmadarshanayoga.in</p>
+                                    <p class="para"><span class="glyphicon glyphicon-envelope" style="padding-right:10px;"></span>  info@atmadarshanayoga.in</p>
+                                    <p class="para"><span class="glyphicon glyphicon-envelope" style="padding-right:10px;"></span> www.atmadarshanayoga.in</p>
                                     <br><br><br><br>
                                 </div>
                                 </div>
@@ -114,7 +114,19 @@
                                         </div>
                                         <div *ngIf="usercomment.errors?.required && usercomment.touched" class="alert alert-danger">Comment is required</div>
                                         <div *ngIf=" usercomment.errors?.minlength && usercomment.touched" class="alert alert-danger">Minimum 25 characters required</div><br>
-                                                                                         
+                                            
+                                        
+
+                                        <div class="form-check">
+                                                <label class="form-check-label" for="radio1">
+                                                  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <label class="form-check-label" for="radio2">
+                                                  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+                                                </label>
+                                              </div>
                         
                                         <button type="submit" class="subbut" [disabled]="f.form.invalid">Submit</button>
                                             

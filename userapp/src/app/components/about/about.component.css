@@ -163,7 +163,14 @@
   opacity: 1;
 }
 
+.pquote{
+  color:green;font-size:24px;
+}
+
+
 
 @media(min-width:0px) and (max-width:400px){
-  
+  .pquote{
+    font-size:20px;
+  }
 }

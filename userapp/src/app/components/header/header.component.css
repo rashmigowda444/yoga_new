@@ -11,7 +11,7 @@
     margin-top:10px; 
 }
 .navbar-nav{
-    margin-left:100px;
+    margin-left:20px;
 }
 .nav-item{
     font-size:15px;
@@ -96,7 +96,11 @@
   .dropdown-menu a:hover{ 
     color:#ff9933 !important;
   }
-
+  .downloadimg{
+      height:30px;
+      width:30px;
+      margin-top:10px;
+  }
 
 
 
@@ -117,7 +121,9 @@
     .dropdown-item{
         font-size:13px;
     }
-
+    .nav-item{
+        font-size:14px;
+    }
 
 
 
