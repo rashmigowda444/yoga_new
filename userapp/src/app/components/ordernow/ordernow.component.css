@@ -1,0 +1,183 @@
+.signup{
+    padding-top:50px; 
+    position:relative;
+    
+}
+.signupform{
+    padding:40px;
+    box-shadow:0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    background-color:#ffffff;
+}
+.heading{
+    margin-left:-7px;
+    margin-top:-40px;
+    height: 70px;
+    width:380px;
+    background-color:green;
+    box-shadow:0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    color:white;
+    text-align: center;
+    padding-top: 15px;
+}
+.already{
+    font-family: 'Courgette', cursive;
+    font-size:18px; 
+}
+.subbut{
+    height:40px;width:100px;background-color:green;color:white;border:none;font-size:14px;
+}
+.cancelbut{
+    height:40px;width:100px;background-color:orange;color:white;border:none;font-size:14px;
+}
+.form_left{
+/* background:  linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+background:url(/assets/images/form_image.jpeg) no-repeat; 
+background-size: 450px;
+  margin-left:-40px;
+  margin-top:-40px;
+  margin-bottom:-40px;
+  height:auto;
+  width:200%;
+}
+.form_right{
+    margin-left:120px;
+    padding-top:40px;
+}
+
+#navform {
+	width: 200px;
+	margin: 4em auto;
+	padding: 2em 2em 2em 2em;
+	/*background:#ffc04c;*/
+	border: 2px solid #ffc04c ;
+	/*box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;*/
+	margin-left:-28px;
+	margin-top:2px;
+	height:248px;
+	border-radius:5px;
+	padding-left:8px;
+	padding-right:8px;
+}
+
+.group { 
+	position: relative; 
+	margin-bottom: 20px; 
+}
+
+/* input {
+	font-size: 14px;
+	padding: 5px 5px 10px 0px;
+	-webkit-appearance: none;
+	display: block;
+	background: #fafafa;
+	color: #636363;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+
+input:focus { outline: none; } */
+
+
+/* Label */
+
+/* #navlabel {
+	color:#2C292D; 
+	font-size: 16px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 15px;
+	top: 105px;
+	transition: all 0.2s ease;
+} */
+
+
+/* active */
+
+/* input:focus ~ #navlabel, input.used ~ #navlabel {
+	top: -20px;
+  transform: scale(.75); left: -2px;
+	
+	color: #4a89dc;
+} */
+
+
+/* Underline */
+
+/* .bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.bar:before, .bar:after {
+	content: '';
+	height: 2px; 
+	width: 0;
+	bottom: 1px; 
+	position: absolute;
+	background: #4a89dc; 
+	transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; } */
+
+
+/* active */
+
+/* input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; } */
+
+
+/* Highlight */
+
+/* .highlight {
+	position: absolute;
+	height: 60%; 
+	width: 100px; 
+	top: 25%; 
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+} */
+
+
+/* active */
+
+/* input:focus ~ .highlight {
+	animation: inputHighlighter 0.3s ease;
+}
+#navinput{
+	background:#e5e5e5;
+	}
+	 */
+/* Animations */
+
+/* @keyframes inputHighlighter {
+	from { background: #4a89dc; }
+	to 	{ width: 0; background: transparent; }
+} */
+
+
+/* Button */
+/* #navbtn{
+	width:100%;
+	height:20%;
+	font-size:16px;
+	}
+
+	#homesearch{
+		margin-left:760px;
+		bottom:0px;
+		position:absolute;
+	} */
+
+
+
+	.radio_text{
+		font-family: 'Quicksand', sans-serif;
+		font-size: 14px;
+	}

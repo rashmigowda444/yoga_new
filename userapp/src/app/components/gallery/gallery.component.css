@@ -1,5 +1,4 @@
 
-
   .bg{
     margin-top:-20px;
   }
@@ -19,6 +18,7 @@
     background: linear-gradient(rgba(85, 77, 77, 0.5), rgba(71, 69, 69, 0.5));
     margin-top:-350px;
     position: relative;
+    margin-bottom:140px;
   }
   
   .thought_author{

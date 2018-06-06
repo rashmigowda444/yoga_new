@@ -19,6 +19,7 @@
     background: linear-gradient(rgba(85, 77, 77, 0.5), rgba(71, 69, 69, 0.5));
     margin-top:-350px;
     position: relative;
+    margin-bottom:150px;
   }
   
   .thought_author{
@@ -56,4 +57,12 @@
     .serv_para{
       font-family:'Quicksand', sans-serif;
       font-size:16px;
+    }
+
+
+
+    @media(min-width:0px) and (max-width:400px){
+      .colimg{
+        display:none;
+      }
     }
