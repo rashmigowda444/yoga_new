@@ -22,7 +22,7 @@ export class ContactComponent implements OnInit {
     subject: "", 
     comment: "" 
     } 
-
+    message:any;
   onSubmit(){   
     this.phpService      
     .onSubmit(this.user)     
@@ -31,5 +31,6 @@ export class ContactComponent implements OnInit {
   goBack(){ 
     // this.myForm.reset();
      this.router.navigate(['/contact']);
+     this.message="Pearl Vedic Book sample pdf has been sent to your email. Thank you..!!";
   }
 }

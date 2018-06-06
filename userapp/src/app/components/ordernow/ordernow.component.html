@@ -31,12 +31,12 @@
                     <div class="heading">
                       <h1>Register</h1>
                     </div><br><br>
-                 <form novalidate #f="ngForm" (ngSubmit)="onRegister()" >
+                 <form novalidate #f="ngForm" (ngSubmit)="onRegister(); f.reset()" >
             
                         <div class="form-group">
                                 <p class="para">Full Name:</p>
                                 <input type="text" 
-                                    class="form-control" 
+                                class="form-control" 
                                     id="fname" 
                                    
                                     name="fname"
@@ -46,8 +46,8 @@
                                     maxlength="25" 
                                     pattern="^[a-zA-Z][a-zA-Z\s]{2,15}$"
                                     required>
-                                    <span class="highlight"></span><span class="bar"></span>
-          <label id="navlabel">Name</label>
+                                   
+          
                             </div>
                  <div class="alert alert-danger" *ngIf="userfname.touched && !userfname.valid">
                     <div *ngIf="userfname.errors.required">Name is required.</div>
@@ -124,7 +124,7 @@
                         name="book" 
                         value="read" 
                         class="radio_text"
-                        checked ><span class="radio_text">Read Sample</span>
+                        ng-checked="true" ><span class="radio_text">Read Sample</span>
 
                         <input type="radio" 
                         [(ngModel)]="user.book"
@@ -132,8 +132,9 @@
                         value="buy"><span class="radio_text">Buy Now</span>
                     </div><br><br>
             
-            
-                   
+                    
+
+
                  <!-- <div class="form-group">
                      <h2>Password:</h2>
                      <input type="password" 
@@ -153,8 +154,9 @@
                  <div *ngIf="userpassword.errors?.pattern" class="alert alert-danger">Required alteast one uppercase/lowercase/number/special character</div>-->
                    
                    <hr> <br>     
-                 <button  type="submit" class="subbut" >Submit</button>
-                 <button  type="reset" class="cancelbut">Reset</button><br><br>
+                 <button  type="submit" class="subbut" [disabled]="f.form.invalid" >Submit</button>
+                 <button  type="reset" class="cancelbut" >Reset</button><br><br>
+                 <p class="para" style="color:green;">{{message}}</p>
                  
                  <!-- <p class="already">Already have an account? <a href="signin">Sign In</a></p> -->
         

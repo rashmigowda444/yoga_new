@@ -14,8 +14,9 @@ export class OrdernowComponent implements OnInit {
     email:'',
     phone:'',
     book:''
+   
 }
-
+message:any;
 
 constructor(private phpService: PhpService,    private router: Router) { }
 
@@ -29,6 +30,7 @@ constructor(private phpService: PhpService,    private router: Router) { }
   } 
   goBack(){ 
     // this.myForm.reset();
-     this.router.navigate(['/home']);
+     this.router.navigate(['/ordernow']);
+     this.message="Pearl Vedic Book sample pdf has been sent to your email. Thank you..!!";
   }
 }
