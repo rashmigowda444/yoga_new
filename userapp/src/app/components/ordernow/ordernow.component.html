@@ -31,7 +31,7 @@
                     <div class="heading">
                       <h1>Register</h1>
                     </div><br><br><br>
-                 <form novalidate #f="ngForm" (ngSubmit)="onRegister()" >
+                 <form novalidate #f="ngForm" (ngSubmit)="onRegister(); f.reset()" >
                         
                         <div class="group">
                                 <input type="text" 
@@ -162,3 +162,4 @@
 
       <app-footer></app-footer>
     </body>
+    

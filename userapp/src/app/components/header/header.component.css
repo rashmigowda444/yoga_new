@@ -11,7 +11,7 @@
     margin-top:10px; 
 }
 .navbar-nav{
-    margin-left:0px;
+    margin-left:120px;
 }
 .nav-item{
     font-size:15px;
@@ -30,10 +30,7 @@
    color:green !important;
 } 
 
-.downloadimg{      
-    height:50px;     
-    width:100px;      
-    margin-top:10px;  }
+
 
 @-webkit-keyframes blink {
     0% {
@@ -101,13 +98,11 @@
   .dropdown-menu a:hover{ 
     color:#ff9933 !important;
   }
-  .downloadimg{
-      height:30px;
-      width:30px;
-      margin-top:10px;
-  }
-
-
+  
+  .downloadimg{        
+        height:50px;      
+           width:50px; 
+              }
 
 
   @media(min-width:0px) and (max-width:400px){

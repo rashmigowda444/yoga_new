@@ -31,6 +31,6 @@ export class ContactComponent implements OnInit {
   goBack(){ 
     // this.myForm.reset();
      this.router.navigate(['/contact']);
-     this.message="Pearl Vedic Book sample pdf has been sent to your email. Thank you..!!";
+     this.message="We will get back to you. Thank you..!!";
   }
 }
