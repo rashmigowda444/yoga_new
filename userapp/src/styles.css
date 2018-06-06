@@ -72,6 +72,14 @@ height: 100%;
 to{transform:scale(1.9)}}
 
 
+.bannerimg{
+    height:500px;
+    width:100%;
+  }
+  .headorange{
+    color:orange;text-align:justify;
+  }
+
 
 @media(min-width:0px) and (max-width:400px){
 .thought_about{
@@ -91,6 +99,21 @@ to{transform:scale(1.9)}}
     position:relative;
     background-size:cover;
     height: 100%;
+}
+.allhead{
+    font-size:23px;
+    color:green;
+    font-weight:bold
+}
+.para{
+    font-size:15px;
+    text-align:justify;
+}
+.bannerimg{
+    height:250px;
+}
+.headorange{
+   font-size:18px;
 }
 
 }

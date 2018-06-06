@@ -29,4 +29,9 @@ export class PhpService {
     return this._http.post("http://54.202.103.240/php1/insert.php", info)
     .map(()=>"");  
   }
+
+  onRegister(info){    
+    return this._http.post("http://localhost/php1/register.php", info)
+    .map(()=>"");  
+  }
 }

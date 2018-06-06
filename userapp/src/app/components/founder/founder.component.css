@@ -199,10 +199,23 @@
   backface-visibility: hidden;
   opacity: 1;
 }
+.img-circle{
+  width:310px;
+  height:410px;
+}
+.pfounder{
+  position:absolute;
+  bottom:10px;
+  color:#004C1F;
+}
+.foundimg{
+  margin-top:80px;
+}
+
 
 @media(min-width:0px) and (max-width:400px){
   .founder_info{
-    height:130px;
+    height:80px;
   }
   .founder_info2{
     height:220px;
@@ -230,4 +243,18 @@
       margin-top:50px;
     }
   
+    .img-circle{
+      width:250px;
+      height:340px;
+      margin-left:15px;
+    }
+    .pfounder{
+      font-size:30px;
+    }
+    .foundimg{
+      margin-left:20px;
+      width:270px;
+      margin-bottom:20px;
+    }
+
 }

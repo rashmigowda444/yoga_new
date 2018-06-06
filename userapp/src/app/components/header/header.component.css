@@ -11,7 +11,7 @@
     margin-top:10px; 
 }
 .navbar-nav{
-    margin-left:100px;
+    margin-left:120px;
 }
 .nav-item{
     font-size:15px;
@@ -25,9 +25,11 @@
 .nav-item a{
     letter-spacing: 2px;
 }
+
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
    color:green !important;
 } 
+
 
 
 @-webkit-keyframes blink {
@@ -96,9 +98,11 @@
   .dropdown-menu a:hover{ 
     color:#ff9933 !important;
   }
-
-
-
+  
+  .downloadimg{        
+        height:50px;      
+           width:50px; 
+              }
 
 
   @media(min-width:0px) and (max-width:400px){
@@ -117,7 +121,9 @@
     .dropdown-item{
         font-size:13px;
     }
-
+    .nav-item{
+        font-size:14px;
+    }
 
 
 

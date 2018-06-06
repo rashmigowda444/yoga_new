@@ -1,63 +1,4 @@
 
-/* .bg{
-    margin-top:-20px;margin-left:-15px;position:absolute;
-   }
-
-.thought_about{        
- margin-left:80px;height:230px;width: 87%;opacity: 1;color:white;font-weight: bold;
-font-size: 35px;padding:40px;background: linear-gradient(rgba(85, 77, 77, 0.5), rgba(71, 69, 69, 0.5));
- position:relative;margin-top:60px;
- -webkit-animation: slideIn 8s forwards;  
- -moz-animation: slideIn 8s forwards;  
- animation: slideIn 8s forwards;}   
-
-.thought_author{       
- float:right;        
-font-family: 'Tangerine', cursive;font-size: 46px;    
-}
-
-@-webkit-keyframes slideIn {
-    0% {
-    transform: translateX(-900px);
-    }
-    100% {
-    transform: translateX(0);
-    }
-    }
-    @-moz-keyframes slideIn {
-    0% {
-    transform: translateX(-900px);
-    }
-    100% {
-    transform: translateX(0);
-    }
-    }
-    @keyframes slideIn {
-    0% {
-    transform: translateX(-900px);
-    }
-    100% {
-    transform: translateX(0);
-    }
-    }
-  
-.rowover{
-    padding-left:30px;padding-right:30px;
-  }
-.coladdress p{
-    font-size:16px;
-}
-.coladdress{
-    padding-left:30px;padding-right:30px;overflow:hidden;}
-
-.colmap{
-    padding-left:50px;
-}
-.input-group{
-
-overflow: hidden !important;
-} */
-
 .bg{
     margin-top:-20px;
   }
@@ -110,9 +51,7 @@ overflow: hidden !important;
     transform: translateX(0);
     }
     } 
-    .coladdress p{
-        font-size:16px;
-    }
+    
 
     .founder_card2{
         height: auto;
