@@ -11,7 +11,7 @@
     margin-top:10px; 
 }
 .navbar-nav{
-    margin-left:30px;
+    margin-left:0px;
 }
 .nav-item{
     font-size:15px;
@@ -25,10 +25,15 @@
 .nav-item a{
     letter-spacing: 2px;
 }
+
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
    color:green !important;
 } 
-.downloadimg{      height:30px;      width:30px;      margin-top:10px;  }
+
+.downloadimg{      
+    height:50px;     
+    width:100px;      
+    margin-top:10px;  }
 
 @-webkit-keyframes blink {
     0% {
@@ -96,7 +101,11 @@
   .dropdown-menu a:hover{ 
     color:#ff9933 !important;
   }
-
+  .downloadimg{
+      height:30px;
+      width:30px;
+      margin-top:10px;
+  }
 
 
 
@@ -117,7 +126,9 @@
     .dropdown-item{
         font-size:13px;
     }
-
+    .nav-item{
+        font-size:14px;
+    }
 
 
 
