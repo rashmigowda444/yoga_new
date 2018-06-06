@@ -23,7 +23,7 @@ import { ComingsoonComponent } from './components/comingsoon/comingsoon.componen
 import { BookappointmentComponent } from './components/bookappointment/bookappointment.component';
 
 const appRoutes:Routes=[
-  {path:'', component:HomeComponent},
+  {path:'', redirectTo: '/home', pathMatch: 'full'},
   {path:'home', component:HomeComponent},
   {path:'about', component:AboutComponent},
   {path:'founder', component:FounderComponent},
@@ -62,7 +62,7 @@ const appRoutes:Routes=[
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes, { useHash: false })
+    RouterModule.forRoot(appRoutes, { useHash: true })
   ],
   providers: [PhpService],
   bootstrap: [AppComponent]
