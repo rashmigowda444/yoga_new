@@ -46,6 +46,8 @@
                                     maxlength="25" 
                                     pattern="^[a-zA-Z][a-zA-Z\s]{2,15}$"
                                     required>
+                                    <span class="highlight"></span><span class="bar"></span>
+          <label id="navlabel">Name</label>
                             </div>
                  <div class="alert alert-danger" *ngIf="userfname.touched && !userfname.valid">
                     <div *ngIf="userfname.errors.required">Name is required.</div>

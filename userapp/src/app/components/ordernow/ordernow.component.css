@@ -75,14 +75,14 @@ background-size: 450px;
 	border: none;
 	border-radius: 0;
 	border-bottom: 1px solid #757575;
-}
+}*/
 
-input:focus { outline: none; } */
+input:focus { outline: none; } 
 
 
 /* Label */
 
-/* #navlabel {
+#navlabel {
 	color:#2C292D; 
 	font-size: 16px;
 	font-weight: normal;
@@ -91,22 +91,22 @@ input:focus { outline: none; } */
 	left: 15px;
 	top: 105px;
 	transition: all 0.2s ease;
-} */
+}
 
 
 /* active */
 
-/* input:focus ~ #navlabel, input.used ~ #navlabel {
+input:focus ~ #navlabel, input.used ~ #navlabel {
 	top: -20px;
   transform: scale(.75); left: -2px;
 	
 	color: #4a89dc;
-} */
+}
 
 
 /* Underline */
 
-/* .bar {
+.bar {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -124,17 +124,17 @@ input:focus { outline: none; } */
 
 .bar:before { left: 50%; }
 
-.bar:after { right: 50%; } */
+.bar:after { right: 50%; }
 
 
 /* active */
 
-/* input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; } */
+input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 
 
 /* Highlight */
 
-/* .highlight {
+.highlight {
 	position: absolute;
 	height: 60%; 
 	width: 100px; 
@@ -142,38 +142,24 @@ input:focus { outline: none; } */
 	left: 0;
 	pointer-events: none;
 	opacity: 0.5;
-} */
+}
 
 
 /* active */
 
-/* input:focus ~ .highlight {
+input:focus ~ .highlight {
 	animation: inputHighlighter 0.3s ease;
 }
 #navinput{
 	background:#e5e5e5;
 	}
-	 */
+	
 /* Animations */
 
-/* @keyframes inputHighlighter {
+@keyframes inputHighlighter {
 	from { background: #4a89dc; }
 	to 	{ width: 0; background: transparent; }
-} */
-
-
-/* Button */
-/* #navbtn{
-	width:100%;
-	height:20%;
-	font-size:16px;
-	}
-
-	#homesearch{
-		margin-left:760px;
-		bottom:0px;
-		position:absolute;
-	} */
+}
 
 
 
