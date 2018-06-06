@@ -1,0 +1,214 @@
+<body class="body">
+  <app-header></app-header><br><br>
+
+  <div class="bodydiv">
+<!--               
+      <div class="row">
+              <div class="col-md-3">
+                      <h1 class="allhead">PRE-ORDER</h1>
+              </div>
+              <div class="col-md-9" style="margin-top:10px;">
+                      <hr>
+              </div>             
+      </div><br><br> -->
+
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10 " >
+            <div class="row signupform">
+                <div class="col-md-5 form_left">
+                    <p style="color:white;font-family: 'Courgette', cursive;font-size:50px;margin-top:80px;margin-left:30px;margin-right:30px;">
+                        <sup><span> <i  class="fa fa-quote-left fa-3x qua_cap quotes" style="font-size:30px;" ></i></span></sup>
+                        Yoga is the journey of the self, through the self , to the self .
+                        <sup><span> <i  class="fa fa-quote-right fa-3x qua_cap quotes" style="font-size:30px;"></i></span></sup>
+                </p><br>
+                <p style="color:white;font-size:35px;margin-top:0px;margin-left:30px;margin-right:30px;"><b>-  Bhagavad Gita</b></p>
+
+                </div>
+                <div class="col-md-5 form_right ">
+                    <div class="heading">
+                      <h1>Register</h1>
+                    </div><br><br>
+                 <form novalidate #f="ngForm" (ngSubmit)="onRegister()" >
+            
+                        <div class="form-group">
+                                <p class="para">Full Name:</p>
+                                <input type="text" 
+                                    class="form-control" 
+                                    id="fname" 
+                                   
+                                    name="fname"
+                                    [(ngModel)]="user.fname"
+                                    #userfname="ngModel"
+                                    minlength="3" 
+                                    maxlength="25" 
+                                    pattern="^[a-zA-Z][a-zA-Z\s]{2,15}$"
+                                    required>
+                                    <span class="highlight"></span><span class="bar"></span>
+          <label id="navlabel">Name</label>
+                            </div>
+                 <div class="alert alert-danger" *ngIf="userfname.touched && !userfname.valid">
+                    <div *ngIf="userfname.errors.required">Name is required.</div>
+                    <div *ngIf="userfname.errors.minlength">First Name should be minimum {{ userfname.errors.minlength.requiredLength }} and maximum 15 characters.</div>
+                    <div *ngIf="userfname.errors.pattern">Only alphabets are allowed.</div>
+                </div>
+        
+                 <!-- <div *ngIf="userfname.errors?.required && userfname.touched" class="alert alert-danger">First name is required</div>
+                 -->
+        
+        
+                 <!-- <div class="form-group">
+                     <h2>Last Name:</h2>
+                     <input type="text" 
+                         class="form-control" 
+                         id="lname" 
+                        
+                         name="lname"
+                         [(ngModel)]="user.lname"
+                         #userlname="ngModel"
+                         minlength="3" 
+                         maxlength="15" 
+                         pattern="^[a-zA-Z][a-zA-Z\s]{2,15}$"
+                         required>
+                 </div>
+        
+                 <div class="alert alert-danger" *ngIf="userlname.touched && !userlname.valid">
+                    <div *ngIf="userlname.errors.required">Last Name is required.</div>
+                    <div *ngIf="userlname.errors.minlength">Last Name should be minimum {{ userlname.errors.minlength.requiredLength }} and maximum 15 characters.</div>
+                    <div *ngIf="userlname.errors.pattern">Only alphabets are allowed.</div>
+                </div> -->
+        
+                 <!-- <div *ngIf="userlname.errors?.required && userlname.touched" class="alert alert-danger">Last name is required</div> -->
+        
+                 <div class="form-group">
+                     <p class="para">Email:</p>
+                     <input type="email" 
+                         class="form-control" 
+                         id="email" 
+                         
+                         name="email"
+                         [(ngModel)]="user.email"
+                         #useremail="ngModel"
+                         pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                         required>
+                 </div>
+        
+                 <div *ngIf="useremail.errors?.required && useremail.touched" class="alert alert-danger">Email is required</div>
+                 <div *ngIf="useremail.errors?.pattern" class="alert alert-danger">Please provide a valid email address</div> 
+        
+                 <div class="form-group">
+                     <p class="para">Phone:</p>
+                     <input type="text"  
+                         class="form-control" 
+                         id="phone" 
+                         
+                         name="phone"
+                         [(ngModel)]="user.phone"
+                         #userphone="ngModel"
+                         minlength="10"
+                         maxlength="10"
+                         pattern="^[6789][0-9]{0,10}$"
+                        required>
+                 </div>
+                 <div *ngIf="userphone.errors?.maxlength || userphone.errors?.minlength && userphone.touched" class="alert alert-danger">Enter a 10 digit phone number</div>
+                 <div *ngIf="userphone.errors?.pattern" class="alert alert-danger">Please provide a valid phone number</div> 
+                 <div *ngIf="userphone.errors?.required && userphone.touched" class="alert alert-danger">Phone Number is required</div>
+        
+                  
+                 <div class="form-group">
+                        <p class="para">Pearl Vedic Book:</p>
+                        <input type="radio" 
+                        [(ngModel)]="user.book"
+                        name="book" 
+                        value="read" 
+                        class="radio_text"
+                        checked ><span class="radio_text">Read Sample</span>
+
+                        <input type="radio" 
+                        [(ngModel)]="user.book"
+                        name="book" 
+                        value="buy"><span class="radio_text">Buy Now</span>
+                    </div><br><br>
+            
+            
+                   
+                 <!-- <div class="form-group">
+                     <h2>Password:</h2>
+                     <input type="password" 
+                         class="form-control" 
+                         id="password" 
+                         
+                         name="password"
+                         [(ngModel)]="user.password"
+                         #userpassword="ngModel"
+                         minlength="8"
+                         maxlength="25"
+                         pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,25}$"
+                         required>
+                 </div>
+                 <div *ngIf="userpassword.errors?.minlength && userpassword.touched" class="alert alert-danger">Password must be minimum 8 characters length</div>
+                 <div *ngIf="userpassword.errors?.required && userpassword.touched" class="alert alert-danger">Password is required</div>
+                 <div *ngIf="userpassword.errors?.pattern" class="alert alert-danger">Required alteast one uppercase/lowercase/number/special character</div>-->
+                   
+                   <hr> <br>     
+                 <button  type="submit" class="subbut" >Submit</button>
+                 <button  type="reset" class="cancelbut">Reset</button><br><br>
+                 
+                 <!-- <p class="already">Already have an account? <a href="signin">Sign In</a></p> -->
+        
+               </form>
+            </div>
+            </div>
+            </div>
+        
+          <div class="col-md-1">
+            </div>
+
+      </div><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <form id="navform"  name="sample" action="contact.php" method="POST" style="margin-left:500px;">
+      <div class="group">
+          <input type="text"><span class="highlight"></span><span class="bar"></span>
+          <label id="navlabel">Name</label>
+      </div>
+      <div class="group">
+        <input type="email"><span class="highlight"></span><span class="bar"></span>
+        <label id="navlabel">Email</label>
+      </div>
+       <div class="group">
+        <input type="text"  name="Enquiry" rows="2"><span class="highlight"></span><span class="bar"></span>
+        <label id="navlabel">Message</label>
+      </div>
+          <button type="submit" class="btn btn-primary" id="navbtn">Send</button>
+    </form> -->
+
+      <app-footer></app-footer>
+    </body>

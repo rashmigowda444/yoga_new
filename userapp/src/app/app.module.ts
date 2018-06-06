@@ -21,6 +21,7 @@ import { YogaclassesComponent } from './components/yogaclasses/yogaclasses.compo
 import { AdyComponent } from './components/ady/ady.component';
 import { ComingsoonComponent } from './components/comingsoon/comingsoon.component';
 import { BookappointmentComponent } from './components/bookappointment/bookappointment.component';
+import { OrdernowComponent } from './components/ordernow/ordernow.component';
 
 const appRoutes:Routes=[
   {path:'', component:HomeComponent},
@@ -36,7 +37,8 @@ const appRoutes:Routes=[
   {path:'yogaclasses', component:YogaclassesComponent},
   {path:'ady', component:AdyComponent},
   {path:'coming',component:ComingsoonComponent},
-  {path:'bookappointment',component:BookappointmentComponent}
+  {path:'bookappointment',component:BookappointmentComponent},
+  {path:'ordernow',component:OrdernowComponent}
 ]
 
 @NgModule({
@@ -56,13 +58,14 @@ const appRoutes:Routes=[
     YogaclassesComponent,
     AdyComponent,
     ComingsoonComponent,
-    BookappointmentComponent
+    BookappointmentComponent,
+    OrdernowComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes, { useHash: true })
+    RouterModule.forRoot(appRoutes, { useHash: false })
   ],
   providers: [PhpService],
   bootstrap: [AppComponent]
