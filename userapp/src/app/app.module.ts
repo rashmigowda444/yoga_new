@@ -23,6 +23,11 @@ import { ComingsoonComponent } from './components/comingsoon/comingsoon.componen
 import { BookappointmentComponent } from './components/bookappointment/bookappointment.component';
 import { OrdernowComponent } from './components/ordernow/ordernow.component';
 import { HomeopathyComponent } from './components/homeopathy/homeopathy.component';
+import { PoweryogaComponent } from './components/poweryoga/poweryoga.component';
+import { AyurvedaComponent } from './components/ayurveda/ayurveda.component';
+import { AstrologyComponent } from './components/astrology/astrology.component';
+import { AcupressureComponent } from './components/acupressure/acupressure.component';
+import { NaturopathyComponent } from './components/naturopathy/naturopathy.component';
 
 const appRoutes:Routes=[
   {path:'', redirectTo: '/home', pathMatch: 'full'},
@@ -36,6 +41,11 @@ const appRoutes:Routes=[
   {path:'testimonial', component:TestimonialComponent},
   {path:'coordinators', component:CoordinatorsComponent},
   {path:'yogaclasses', component:YogaclassesComponent},
+  {path:'poweryoga', component:PoweryogaComponent},
+  {path:'ayurveda', component:AyurvedaComponent},
+  {path:'astrology', component:AstrologyComponent},
+  {path:'acupressure', component:AcupressureComponent},
+  {path:'naturopathy', component:NaturopathyComponent},
   {path:'ady', component:AdyComponent},
   {path:'coming',component:ComingsoonComponent},
   {path:'bookappointment',component:BookappointmentComponent},
@@ -63,6 +73,11 @@ const appRoutes:Routes=[
     BookappointmentComponent,
     OrdernowComponent,
     HomeopathyComponent
+    PoweryogaComponent,
+    AyurvedaComponent,
+    AstrologyComponent,
+    AcupressureComponent,
+    NaturopathyComponent
   ],
   imports: [
     BrowserModule,

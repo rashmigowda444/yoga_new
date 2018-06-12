@@ -70,7 +70,7 @@ background-size: 450px;
 		padding: 5px 5px 10px 0px;
 		-webkit-appearance: none;
 		display: block;
-		/* background: #fafafa; */
+		background: #fafafa;
 		color: #636363;
 		width: 100%;
 		border: none;
@@ -148,7 +148,7 @@ background-size: 450px;
 	
 	/* active */
 	
-	input:focus ~ .highlight {
+	.inputline:focus ~ .highlight {
 		animation: inputHighlighter 0.3s ease;
 		
 	}
@@ -164,6 +164,8 @@ background-size: 450px;
 	}
 	
 	
+<<<<<<< HEAD
+=======
 
 
 
@@ -199,3 +201,4 @@ background-size: 450px;
 		  width:100%;
 		}
 }
+>>>>>>> 8420ded0a32f531798457214507b7b9232e81b2f

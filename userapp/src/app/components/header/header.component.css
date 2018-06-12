@@ -98,11 +98,20 @@
   .dropdown-menu a:hover{ 
     color:#ff9933 !important;
   }
+<<<<<<< HEAD
+  .downloadimg{
+      height:50px;
+      width:50px; 
+  }
+
+
+=======
   
   .downloadimg{        
         height:50px;      
            width:50px; 
               }
+>>>>>>> 8420ded0a32f531798457214507b7b9232e81b2f
 
 
   @media(min-width:0px) and (max-width:400px){
