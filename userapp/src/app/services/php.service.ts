@@ -35,7 +35,7 @@ export class PhpService {
     .map(()=>"");  
   }
   onEnroll(info){    
-    return this._http.post("http://localhost/php1/enroll.php", info)
+    return this._http.post("http://54.202.103.240/php1/enroll.php", info)
     .map(()=>"");  
   }
 }

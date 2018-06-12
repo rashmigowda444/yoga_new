@@ -140,6 +140,7 @@
 
 
 
+
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog " role="document">
                           <div class="modal-content">
@@ -202,11 +203,13 @@
                                             #usercomment="ngModel" minlength="25" required ></textarea>
                                     </div><br>
                         
-                                   <p class="para"><b>Note :</b> Please check your email after submission.</p>
-                                   
+                                   <!-- <p class="para"><b>Note :</b> Please check your email after submission.</p>
+                                    -->
                                     <button type="submit" class="subbut2" >Submit</button>
                                       
                                   </form>
+                                  <br>
+                                  <h3>{{message}}</h3>
                             </div>
                             <div class="modal-footer">
                               <button type="button"  data-dismiss="modal">Close</button>

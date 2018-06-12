@@ -7,6 +7,7 @@ import { PhpService } from '../../services/php.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  message:any;
   user={
     fname:'',
     email:'',
@@ -26,8 +27,8 @@ constructor(private phpService: PhpService,    private router: Router) { }
   } 
   goBack(){ 
     // this.myForm.reset();
-     this.router.navigate(['/home']);
-     //this.message="Pearl Vedic Book sample pdf has been sent to your email. Thank you..!!";
+     //this.router.navigate(['/home']);
+     this.message="Mail has been sent. Please check your mail..!!";
   }
  
 }
