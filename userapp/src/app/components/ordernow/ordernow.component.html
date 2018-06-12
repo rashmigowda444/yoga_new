@@ -31,7 +31,7 @@
                     <div class="heading">
                       <h1>Register</h1>
                     </div><br><br><br>
-                 <form novalidate #f="ngForm" (ngSubmit)="onRegister()" >
+                 <form novalidate #f="ngForm" (ngSubmit)="onRegister(); f.reset()" >
                         
                         <div class="group">
                                 <input type="text" 
@@ -103,8 +103,9 @@
                     </div><br><br>
                    
                    <hr> <br>     
-                 <button  type="submit" class="subbut" >Submit</button>
-                 <button  type="reset" class="cancelbut">Reset</button><br><br>
+                 <button  type="submit" class="subbut" [disabled]="f.form.invalid" >Submit</button>
+                 <button  type="reset" class="cancelbut" >Reset</button><br><br>
+                 <p class="para" style="color:green;">{{message}}</p>
                  
         
                </form>
@@ -161,3 +162,7 @@
 
       <app-footer></app-footer>
     </body>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8420ded0a32f531798457214507b7b9232e81b2f

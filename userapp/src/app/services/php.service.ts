@@ -11,13 +11,13 @@ export class PhpService {
 
   constructor(private _http:Http) { }
 
-  getServices(){
-    return this._http.get('http://54.202.103.240/php1/services.php')
-      .map(res=>{
-        // console.log(res);
-        return res.json();
-      });
-  }
+  // getServices(){
+  //   return this._http.get('http://54.202.103.240/php1/services.php')
+  //     .map(res=>{
+  //       // console.log(res);
+  //       return res.json();
+  //     });
+  // }
   // getCourses(){
   //   return this._http.get('http://localhost/yoga/userapp/src/php/courses.php')
   //     .map(res=>{
@@ -31,7 +31,7 @@ export class PhpService {
   }
 
   onRegister(info){    
-    return this._http.post("http://localhost/php1/register.php", info)
+    return this._http.post("http://54.202.103.240/php1/register.php", info)
     .map(()=>"");  
   }
 }
