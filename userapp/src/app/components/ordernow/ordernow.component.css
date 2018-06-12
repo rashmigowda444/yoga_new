@@ -70,7 +70,7 @@ background-size: 450px;
 		padding: 5px 5px 10px 0px;
 		-webkit-appearance: none;
 		display: block;
-		/* background: #fafafa; */
+		background: #fafafa;
 		color: #636363;
 		width: 100%;
 		border: none;
@@ -148,7 +148,7 @@ background-size: 450px;
 	
 	/* active */
 	
-	input:focus ~ .highlight {
+	.inputline:focus ~ .highlight {
 		animation: inputHighlighter 0.3s ease;
 		
 	}
