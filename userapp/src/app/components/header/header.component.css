@@ -11,7 +11,7 @@
     margin-top:10px; 
 }
 .navbar-nav{
-    margin-left:0px;
+    margin-left:120px;
 }
 .nav-item{
     font-size:15px;
@@ -30,10 +30,7 @@
    color:green !important;
 } 
 
-.downloadimg{      
-    height:50px;     
-    width:100px;      
-    margin-top:10px;  }
+
 
 @-webkit-keyframes blink {
     0% {
@@ -102,9 +99,8 @@
     color:#ff9933 !important;
   }
   .downloadimg{
-      height:30px;
-      width:30px;
-      margin-top:10px;
+      height:50px;
+      width:50px; 
   }
 
 
