@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homeopathy.component.css']
 })
 export class HomeopathyComponent implements OnInit {
-
+  user={
+    fname:'',
+    email:'',
+    phone:'',
+    comment:''
+   
+}
   constructor() { }
 
   ngOnInit() {

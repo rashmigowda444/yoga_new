@@ -72,7 +72,7 @@ const appRoutes:Routes=[
     ComingsoonComponent,
     BookappointmentComponent,
     OrdernowComponent,
-    HomeopathyComponent
+    HomeopathyComponent,
     PoweryogaComponent,
     AyurvedaComponent,
     AstrologyComponent,
