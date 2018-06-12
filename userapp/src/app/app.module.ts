@@ -22,6 +22,7 @@ import { AdyComponent } from './components/ady/ady.component';
 import { ComingsoonComponent } from './components/comingsoon/comingsoon.component';
 import { BookappointmentComponent } from './components/bookappointment/bookappointment.component';
 import { OrdernowComponent } from './components/ordernow/ordernow.component';
+import { HomeopathyComponent } from './components/homeopathy/homeopathy.component';
 
 const appRoutes:Routes=[
   {path:'', redirectTo: '/home', pathMatch: 'full'},
@@ -38,7 +39,8 @@ const appRoutes:Routes=[
   {path:'ady', component:AdyComponent},
   {path:'coming',component:ComingsoonComponent},
   {path:'bookappointment',component:BookappointmentComponent},
-  {path:'ordernow',component:OrdernowComponent}
+  {path:'ordernow',component:OrdernowComponent},
+  {path:'homeopathy',component:HomeopathyComponent}
 ]
 
 @NgModule({
@@ -59,7 +61,8 @@ const appRoutes:Routes=[
     AdyComponent,
     ComingsoonComponent,
     BookappointmentComponent,
-    OrdernowComponent
+    OrdernowComponent,
+    HomeopathyComponent
   ],
   imports: [
     BrowserModule,
