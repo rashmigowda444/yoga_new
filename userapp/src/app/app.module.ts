@@ -29,8 +29,8 @@ import { AstrologyComponent } from './components/astrology/astrology.component';
 import { AcupressureComponent } from './components/acupressure/acupressure.component';
 import { NaturopathyComponent } from './components/naturopathy/naturopathy.component';
 
+
 const appRoutes:Routes=[
-  {path:'', redirectTo: '/home', pathMatch: 'full'},
   {path:'home', component:HomeComponent},
   {path:'about', component:AboutComponent},
   {path:'founder', component:FounderComponent},
@@ -50,7 +50,9 @@ const appRoutes:Routes=[
   {path:'coming',component:ComingsoonComponent},
   {path:'bookappointment',component:BookappointmentComponent},
   {path:'ordernow',component:OrdernowComponent},
-  {path:'homeopathy',component:HomeopathyComponent}
+  {path:'homeopathy',component:HomeopathyComponent},
+  {path:'', redirectTo: '/home', pathMatch: 'full'},
+  {path:'**', component:HomeComponent }
 ]
 
 @NgModule({

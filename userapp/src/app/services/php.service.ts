@@ -38,4 +38,8 @@ export class PhpService {
     return this._http.post("http://54.202.103.240/php1/enroll.php", info)
     .map(()=>"");  
   }
+  // onRegisterSenti(info){    
+  //   return this._http.post("http://54.202.103.240/php1/registersenti.php", info)
+  //   .map(()=>"");  
+  // }
 }
