@@ -38,4 +38,8 @@ export class PhpService {
     return this._http.post("http://localhost/php1/enroll.php", info)
     .map(()=>"");  
   }
+  onBooking(info){    
+    return this._http.post("http://localhost/php1/appointment.php", info)
+    .map(()=>"");  
+  }
 }

@@ -28,6 +28,9 @@ import { AyurvedaComponent } from './components/ayurveda/ayurveda.component';
 import { AstrologyComponent } from './components/astrology/astrology.component';
 import { AcupressureComponent } from './components/acupressure/acupressure.component';
 import { NaturopathyComponent } from './components/naturopathy/naturopathy.component';
+import { PranichealingComponent } from './components/pranichealing/pranichealing.component';
+import { SpaComponent } from './components/spa/spa.component';
+import { FtrComponent } from './components/ftr/ftr.component';
 
 const appRoutes:Routes=[
   {path:'', redirectTo: '/home', pathMatch: 'full'},
@@ -50,7 +53,10 @@ const appRoutes:Routes=[
   {path:'coming',component:ComingsoonComponent},
   {path:'bookappointment',component:BookappointmentComponent},
   {path:'ordernow',component:OrdernowComponent},
-  {path:'homeopathy',component:HomeopathyComponent}
+  {path:'homeopathy',component:HomeopathyComponent},
+  {path:'pranichealing',component:PranichealingComponent},
+  {path:'spaservice',component:SpaComponent},
+  {path:'ftr',component:FtrComponent}
 ]
 
 @NgModule({
@@ -77,7 +83,10 @@ const appRoutes:Routes=[
     AyurvedaComponent,
     AstrologyComponent,
     AcupressureComponent,
-    NaturopathyComponent
+    NaturopathyComponent,
+    PranichealingComponent,
+    SpaComponent,
+    FtrComponent
   ],
   imports: [
     BrowserModule,

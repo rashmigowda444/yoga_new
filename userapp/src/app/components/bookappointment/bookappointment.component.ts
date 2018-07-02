@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {ActivatedRoute, Params, Router} from '@angular/router';
+import { PhpService } from '../../services/php.service';
 @Component({
   selector: 'app-bookappointment',
   templateUrl: './bookappointment.component.html',
@@ -7,19 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookappointmentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private phpService: PhpService,    private router: Router) { }
+
   user = {   
     fname: "",   
     phone: "",  
-    email: "",   
-    subject: "", 
-    comment: "" 
+    email: "",    
+    comment: "" ,
+    service:"",
+    startdate:"",
+    enddate:""
     }
   ngOnInit() {
   }
 
-  onSubmit(){
-
+  onBooking(){   
+    this.phpService      
+    .onBooking(this.user)     
+    .subscribe(()=> this.goBack());
+  } 
+  goBack(){ 
+    // this.myForm.reset();
+     this.router.navigate(['/home']);
+     
   }
 
 }
