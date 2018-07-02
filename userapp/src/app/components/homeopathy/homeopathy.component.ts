@@ -17,5 +17,7 @@ export class HomeopathyComponent implements OnInit {
 
   ngOnInit() {
   }
-
+onSubmit(){
+  
+}
 }

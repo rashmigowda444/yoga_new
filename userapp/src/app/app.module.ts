@@ -32,8 +32,8 @@ import { PranichealingComponent } from './components/pranichealing/pranichealing
 import { SpaComponent } from './components/spa/spa.component';
 import { FtrComponent } from './components/ftr/ftr.component';
 
+
 const appRoutes:Routes=[
-  {path:'', redirectTo: '/home', pathMatch: 'full'},
   {path:'home', component:HomeComponent},
   {path:'about', component:AboutComponent},
   {path:'founder', component:FounderComponent},
@@ -56,7 +56,9 @@ const appRoutes:Routes=[
   {path:'homeopathy',component:HomeopathyComponent},
   {path:'pranichealing',component:PranichealingComponent},
   {path:'spaservice',component:SpaComponent},
-  {path:'ftr',component:FtrComponent}
+  {path:'ftr',component:FtrComponent},
+  {path:'', redirectTo: '/home', pathMatch: 'full'},
+  {path:'**', component:HomeComponent }
 ]
 
 @NgModule({
