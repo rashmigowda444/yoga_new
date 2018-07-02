@@ -5,7 +5,7 @@
               
       <div class="row">
               <div class="col-md-3">
-                      <h1 class="allhead">PAYMENT GATEWAY</h1>
+                      <h1 class="allhead">BOOK APPOINTMENT</h1>
               </div>
               <div class="col-md-9" style="margin-top:10px;">
                       <hr>
@@ -16,7 +16,7 @@
           <div class="col-md-1">
           </div>
           <div class="col-md-6">
-              <form novalidate #f="ngForm" (ngSubmit)="onSubmit();" class="signupform" name="myForm">
+              <form novalidate #f="ngForm" (ngSubmit)="onBooking(); f.reset()"  class="signupform" name="myForm">
                                   
                    <div class="form-group">
                           <span class="input-group-addon" style="color:white; background-color: orange;width:40px;height:40px;">
@@ -56,20 +56,34 @@
                   <div *ngIf="useremail.errors?.required && useremail.touched" class="alert alert-danger">Email is required</div>
                   <div *ngIf="useremail.errors?.pattern" class="alert alert-danger">Please provide a valid email address</div> 
 
-                                              
-                                            
-                                    
+                                        
+
                   <div class="form-group">
-                          <span class="input-group-addon" style="color:white; background-color: orange;width:40px;height:86px;">
-                          <i class="glyphicon glyphicon-glyphicon glyphicon-pencil"></i>
-                          </span>
-                          <textarea rows="5" class="form-control" id="comment" 
-                          placeholder="Comment" name="comment" [(ngModel)]="user.comment"
-                          #usercomment="ngModel" minlength="25" required style="width:400px;margin-left:40px;margin-top:-85px;"></textarea>
-                  </div>
-                  <div *ngIf="usercomment.errors?.required && usercomment.touched" class="alert alert-danger">Comment is required</div>
-                  <div *ngIf=" usercomment.errors?.minlength && usercomment.touched" class="alert alert-danger">Minimum 25 characters required</div><br>
-                 
+                        <span class="input-group-addon" style="color:white; background-color: orange;width:40px;height:40px;">
+                         <i class="glyphicon glyphicon-user"></i>
+                        </span>
+                                                                
+                        <input type="text" class="form-control" id="service" placeholder="Your service" name="service"[(ngModel)]="user.service" #userservice="ngModel" minlength="3" maxlength="15"  required style="width:400px;height:40px;margin-left:40px;margin-top:-40px;">
+                 </div>
+
+
+                 <div class="form-group">
+                        <span class="input-group-addon" style="color:white; background-color: orange;width:40px;height:86px;">
+                        <i class="glyphicon glyphicon-glyphicon glyphicon-pencil"></i>
+                        </span>
+                        <textarea rows="5" class="form-control" id="comment" 
+                        placeholder="Comment" name="comment" [(ngModel)]="user.comment"
+                        #usercomment="ngModel" minlength="25" required style="width:400px;margin-left:40px;margin-top:-85px;"></textarea>
+                </div>
+                <div *ngIf="usercomment.errors?.required && usercomment.touched" class="alert alert-danger">Comment is required</div>
+                <div *ngIf=" usercomment.errors?.minlength && usercomment.touched" class="alert alert-danger">Minimum 25 characters required</div><br>
+               
+
+
+
+
+
+
                   <div class="form-group ">
                     <label>Start Date</label>
                       <span class="input-group-addon" style="color:white; background-color: orange;width:40px;height:40px;">
@@ -89,7 +103,7 @@
                            
                           </div>
 
-                  <button type="submit" class="subbut2" [disabled]="f.form.invalid">Submit</button> -->
+                  <button type="submit" class="subbut2" [disabled]="f.form.invalid">Submit</button> 
                      
                 </form> 
           </div>

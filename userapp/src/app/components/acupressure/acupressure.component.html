@@ -36,9 +36,9 @@
                
                 <p class="para">Benefits of acupunture and acupunture includes low back pain, neck pain, osteoarthritis, knee pain, headache, migraine, relieving stress, tension and anxiety, improving sleep etc.</p><br>
            
-                <button type="button" class="subbut" data-toggle="modal" data-target="#exampleModal" >
-                    BOOK AN APPOINTMENT
-                  </button>
+                <a [routerLink]="['/bookappointment']"><button type="button" class="subbut" >
+                  BOOK AN APPOINTMENT
+                </button></a>
             </div>
         </div>  
   
@@ -49,7 +49,7 @@
   
   
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog " role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -142,7 +142,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
   
   
   
