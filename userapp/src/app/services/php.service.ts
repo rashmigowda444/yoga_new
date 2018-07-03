@@ -39,7 +39,7 @@ export class PhpService {
     .map(()=>"");  
   }
   onBooking(info){    
-    return this._http.post("http://localhost/php1/appointment.php", info)
+    return this._http.post("http://54.202.103.240/php1/appointment.php", info)
     .map(()=>"");  
   }
 }

@@ -4,6 +4,8 @@ import { RouterModule, Routes, ExtraOptions} from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { FormsModule ,ReactiveFormsModule }   from '@angular/forms';
 import { AppComponent } from './app.component';
+import { SelectModule } from 'ng-select';
+
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
@@ -94,6 +96,7 @@ const appRoutes:Routes=[
     BrowserModule,
     FormsModule,
     HttpModule,
+    SelectModule,
     RouterModule.forRoot(appRoutes, { useHash: true })
   ],
   providers: [PhpService],
