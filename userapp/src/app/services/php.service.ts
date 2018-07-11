@@ -40,6 +40,6 @@ export class PhpService {
   }
   onBooking(info){    
     return this._http.post("http://54.202.103.240/php1/appointment.php", info)
-    .map(()=>"");  
+    .map(()=>"");
   }
 }
